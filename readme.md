@@ -43,4 +43,4 @@ LoopWares is an open-source platform dedicated to providing high-quality **softw
 ### Installation
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/your-username/loopwares.git
+   git clone https://github.com/ayazalvi/loopwares.git
