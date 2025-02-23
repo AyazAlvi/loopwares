@@ -3,8 +3,17 @@
 
 :root {
     --primary: #f14f00;
-    --primary-hover: #e14a00;
+    --primary-alt: #ff9100;
+    --primary-hover: #d14600;
     --color-on-primary: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 100px;
 }
 
 * {
@@ -12,12 +21,37 @@
     padding: 0px;
     margin: 0px;
 }
+
+*::selection {
+    background-color: #81818135;
+}
+
+.header-top {
+    min-height: 20px;
+    background-color: white;
+    box-shadow: 0px 10px white;
+    z-index: 1000;
+}
+
+
 header {
+    top: 20px;
+    width: fit-content;
+    margin-top: 20px;
+    right: 0; left: 0;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    position: sticky;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    background-color: white;
     justify-content: space-between;
-    padding: 20px 150px;
+    gap: 50px;
+    padding: 0px 100px;
+    z-index: 1000;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.055);
 }
 header ul {
     list-style-type: none;
@@ -40,17 +74,10 @@ header ul a:hover {
 }
 
 header button {
-    padding: 15px 30px;
-    background-color: var(--primary);
-    color: var(--color-on-primary);
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
     border-radius: 100px;
-    font-weight: 600;
+    padding: 15px 30px;
 }
 header button:hover {
-    background-color: var(--primary-hover);
     translate: 0px -3px;
 }
 
@@ -88,12 +115,16 @@ button {
     border: none;
     cursor: pointer;
     transition: all 0.3s ease;
-    border-radius: 100px;
+    border-radius: 5px;
     font-weight: 600;
 }
 button:hover {
     background-color: var(--primary-hover);
-    translate: 0px -3px;
+    box-shadow: inset 10px 0px var(--primary-alt);
+}
+
+button.round {
+    border-radius: 100px;
 }
 
 input {
@@ -325,6 +356,18 @@ footer a:hover {
     color: white;
 }
 
+footer a::before {
+    content: '⏵';
+    position: absolute;
+    translate: -10px;
+    color: transparent;
+    transition: all 0.3s ease;
+}
+footer a:hover::before {
+    translate: -20px;
+    color: inherit;
+}
+
 footer > .row {
     width: fit-content;
     justify-content: space-between;
@@ -371,4 +414,10 @@ footer > .row {
 .copyright a:hover {
     color: #fff;
     text-decoration: underline dotted 5px #aaa;
+}
+
+arrow-down::before {
+    display: contents;
+    content: '🞃';
+    font-size: 12px;
 }
