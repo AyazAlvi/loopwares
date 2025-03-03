@@ -518,6 +518,94 @@ sidebar a:hover {
 }
 
 
+.services-group {
+    justify-content: center;
+    align-items: start;
+}
+
+
+.services-group > div {
+    position: relative;
+    background-color: #f5f5f5;
+    box-sizing: content-box;
+    margin: 50px;
+    cursor: pointer;
+    padding: 20px;
+    transition: all 0.25s ease;
+    box-shadow: -50px 30px white,
+                -25px -25px white,
+                30px -50px white,
+                0px 0px var(--primary),
+
+                50px -30px white,
+                25px 25px white,
+                -30px 50px white,
+                0px 0px var(--primary);
+}
+
+
+
+
+
+.services-group > div > ul {
+    list-style-type: none;
+    margin-top: 10px;
+    text-align: start;
+    line-height: 0px;
+    position: fixed;
+    opacity: 0;
+    transition: all 0.25s ease;
+}
+
+.services-group > div:hover > ul {
+    list-style-type: none;
+    text-align: start;
+    position: relative;
+    line-height: 30px;
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+
+.services-group > div > ul > li::before {
+    display: inline;
+    color: var(--primary);
+    padding-right: 10px;
+    content: '⏵';
+}
+
+
+
+.services-group > div:hover {
+    padding: 50px;
+    box-shadow: -50px 30px white,
+                -25px -25px white,
+                30px -50px white,
+                -30px -30px var(--primary),
+
+                50px -30px white,
+                25px 25px white,
+                -30px 50px white,
+                30px 30px var(--primary);
+}
+.services-group > div > p:first-child {
+    position: absolute;
+    margin: -40px 0px 0px -40px;
+    opacity: 0.5;
+}
+.services-group > div > p:nth-child(2) {
+    font-weight: bold;
+    color: #595c5f;
+    font-size: 30px;
+    transition: all 0.25s ease;
+}
+
+.services-group > div:hover > p:nth-child(2) {
+    color: var(--primary);
+}
+
+
+
 
 
 
