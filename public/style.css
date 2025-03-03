@@ -606,6 +606,91 @@ sidebar a:hover {
 
 
 
+.portfolio-items {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    justify-content: start;
+    overflow-x: scroll;
+    padding: 25px 50px;
+    color: #595c5f;
+}
+
+.portfolio-items > div {
+    background-color: #f5f5f5;
+    padding: 50px;
+    box-sizing: border-box;
+    border: solid 0px var(--primary);
+    transition: all 0.25s ease;
+    margin: 40px;
+    cursor: pointer;
+    box-shadow: -30px 30px white,
+                -25px -25px white,
+                30px -30px white,
+                -30px -30px var(--primary),
+
+                30px -30px white,
+                25px 25px white,
+                -30px 30px white,
+                30px 30px var(--primary);
+
+}
+
+.portfolio-items > div:hover {
+    background-color: #eee;
+    box-shadow: -30px 30px white,
+                -25px -25px white,
+                30px -30px white,
+                -30px -30px var(--primary-alt),
+
+                30px -30px white,
+                25px 25px white,
+                -30px 30px white,
+                30px 30px var(--primary-alt);
+    
+}
+
+.portfolio-items > div > img {
+    -webkit-user-drag: none;
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.portfolio-items > div > p:first-child {
+    font-style: italic;
+    font-size: 12px;
+    line-height: 40px;
+}
+
+
+.portfolio-items > div > p:nth-child(3) {
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--primary);
+    line-height: 50px;
+}
+
+.portfolio-items > div > p:nth-child(4) {
+    width: max-content;
+    text-align: justify;
+    text-justify: inter-ideograph;
+    max-width: 310px;
+}
+
+.portfolio-items > div > p:last-child {
+    font-size: 12px;
+    color: var(--primary-alt);
+    margin-top: 20px;
+}
+
+
+
+
+
 
 
 
