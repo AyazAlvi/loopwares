@@ -27,10 +27,10 @@ LoopWares is an open-source platform dedicated to providing high-quality **softw
 
 ## Technologies Used
 
-- **Frontend:** HTML, CSS, JavaScript, [Framework/Tool Name]  
-- **Backend:** [Backend Technology, e.g., Node.js, Django, etc.]  
-- **Hosting:** Firebase Hosting  
-- **License:** [Open Source License, e.g., MIT, Apache 2.0, etc.]  
+- **Frontend:** HTML, CSS, JavaScript (Coming Soon)
+- **Backend:** Not Yet Included.
+- **Hosting:** Firebase Hosting
+- **License:** Apache 2.0 Open Source Licence.  
 
 ---
 
