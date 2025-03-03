@@ -36,6 +36,10 @@ LoopWares is an open-source platform dedicated to providing high-quality **softw
 
 ## Getting Started
 
+### Overview
+- private directory : Only for testing elements. Not included on the site.
+- public directory : Main site code.
+
 ### Prerequisites
 - [List any prerequisites, e.g., Node.js, Python, etc.]  
 - A modern web browser (Chrome, Firefox, Safari, etc.)  
