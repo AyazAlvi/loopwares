@@ -41,8 +41,10 @@ LoopWares is an open-source platform dedicated to providing high-quality **softw
 - public directory : Main site code.
 
 ### Prerequisites
-- [List any prerequisites, e.g., Node.js, Python, etc.]  
-- A modern web browser (Chrome, Firefox, Safari, etc.)  
+- Built using VS Code. And tested on Chrome and firefox.
+- You can choose IDE and testing browser according to your preference.
+
+- Current build is using NodeJS (and firebase CLI), VS Code (and Github Extension), Chrome and Firefox.
 
 ### Installation
 1. Clone the repository:  
