@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+            font-family: 'Poppins';
+        }
+        .sidebar {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            position: fixed;
+            background-color: black;
+            color: white;
+            padding: 30px 100px 30px 30px;
+            height: 100%;
+        }
+        ul {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            list-style-type: none;
+            height: max-content;
+        }
+        a {
+            color: white;
+            line-height: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        a:hover {
+            color: gold;
+        }
+        button {
+            width: fit-content;
+            align-self: center;
+            background-color: gold;
+            border: none;
+            border-radius: 100px;
+            padding: 13px 30px;
+            margin-top: 10px;
+            margin-bottom: 50px;
+            translate: 20px;
+            cursor: pointer;
+            font-family: 'Poppins';
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background-color: gold;
+            box-shadow: inset 10px 0px #ffaa00;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="sidebar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Source Code</a></li>
+        </ul>
+        <button>Contact us</button>
+    </div>
+
+
+</body>
+</html>

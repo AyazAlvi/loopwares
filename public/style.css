@@ -17,7 +17,7 @@ section {
 }
 
 * {
-    font-family: "Sora", serif;
+    font-family: "Sora", sans-serif;
     padding: 0px;
     margin: 0px;
 }
@@ -421,3 +421,83 @@ arrow-down::before {
     content: '🞃';
     font-size: 12px;
 }
+
+
+sidebar {
+    display: flex;
+    flex-flow: column nowrap;
+    position: fixed;
+    width: 70%;
+    height: 100%;
+    box-sizing: border-box;
+    top: 0;
+    padding: 50px 0px;
+    max-width: 350px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    z-index: 1001;
+
+}
+
+sidebar ul {
+    list-style-type: none;
+}
+
+sidebar a {
+    line-height: 50px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+sidebar a:hover {
+    color: var(--primary);
+}
+
+
+
+
+.team-member {
+    padding: 30px;
+    border-radius: 10px;
+    transition: all 0.1s ease;
+}
+
+
+.team-member > img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    object-fit: cover;
+    object-position: 50% 0;
+    user-select: none;
+    box-sizing: border-box;
+    -webkit-user-drag: none;
+    transition: all 0.1s ease;
+}
+
+.team-member:hover > img {
+    padding: 10px;
+    border: solid 5px var(--primary);
+}
+
+
+
+
+.team-member > p:nth-child(2) {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    transition: all 0.1s ease;
+}
+
+.team-member:hover > p:nth-child(2) {
+    color: var(--primary);
+}
+
+
+.team-member {
+
+}
+
